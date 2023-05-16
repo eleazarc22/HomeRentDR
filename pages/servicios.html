@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HomeRentDR es tu solución para el alquiler de tu casa. Nos encargamos de todo el proceso, desde la promoción de la propiedad hasta la selección de inquilinos y el mantenimiento. Nuestro objetivo es hacer que el alquiler sea fácil y sin preocupaciones.">
+    <meta name="keywords" content="alquiler de casas, gestión de alquileres, encontrar inquilinos, promoción de propiedades, mantenimiento de propiedades, servicio de alquiler personalizado, libre de estrés, sin complicaciones">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Servicios - HomeRentDR</title>
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Servicios</title>
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+    <!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  </head>
 <body>
-  <header class="encabezado bg-dark">
+  <header class="encabezado bg-nav">
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="index.html">
-          <img class="logo" src="../img/logo.png" alt="">
+        <a class="navbar-brand" href="../index.html">
+          <img class="logo" src="../img/logo.png" alt="Logotipo de HomeRentDR">
           <h1 class="titulo d-inline">HomeRentDR</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,7 +55,7 @@
       </nav>
     </div>
   </header>
-      <main>
+      <main class="main-servicios">
         <section>
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -75,12 +87,14 @@
                   <span class="badge badge-secondary badge-pill">Popular</span>
                 </li>
             </ul>
-            <div class="my-5">
+            <div class="my-5" data-aos="flip-right">
                 <img src="https://cdn.wheretostay.com/prop_photos/0/841/CasaCalmaAlta_600.jpg" class="img-fluid" alt="Imagen de una casa">
             </div>
+            <div data-aos="flip-right"></div>
+
         </section>
     </main>
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-footer text-white py-4">
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 text-center text-md-start">
@@ -96,6 +110,8 @@
           </div>
         </div>
       </footer>
+
+        <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

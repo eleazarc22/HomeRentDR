@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #texto {
+        flex-basis: 50%;
+        margin-right: 30px;
+    }
+    #video {
+        flex-basis: 50%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #texto {
+        margin-right: 0;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+

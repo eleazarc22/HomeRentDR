@@ -1,0 +1,26 @@
+.main-index {
+    background: linear-gradient(to bottom right, #ffcccc, #99ccff);
+    padding: 50px;
+    }  
+
+@mixin text($texto){
+    display: flex;
+    justify-content: $texto;
+}
+
+.main-contacto {
+    @extend .main-index;
+}
+
+.main-info {
+    @extend .main-index;
+}
+
+.main-servicios {
+    @extend .main-index;
+}
+
+.main-terminos {
+    @extend .main-index;
+    @include text(center);
+}
