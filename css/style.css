@@ -29,6 +29,44 @@ li a {
   padding: 50px;
 }
 
+.main-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-servicios ul {
+  list-style-type: none;
+  padding: 0;
+}
+.main-servicios ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.main-servicios ul li:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #333;
+  border-radius: 50%;
+}
+.main-servicios ul li:after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #333;
+}
+.main-servicios ul:last-child li:after {
+  display: none;
+}
+
 .main-terminos {
   display: flex;
   justify-content: center;

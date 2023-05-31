@@ -14,12 +14,54 @@
 
 .main-info {
     @extend .main-index;
+    
 }
 
 .main-servicios {
     @extend .main-index;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    ul {
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        
+        &:before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        background-color: #333;
+        border-radius: 50%;
+        }
+        
+        &:after {
+        content: "";
+        position: absolute;
+        left: -8px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #333;
+        }
+    }
+    
+    &:last-child {
+        li:after {
+        display: none;
+        }
+    }
+    }
+}
 .main-terminos {
     @extend .main-index;
     @include text(center);
